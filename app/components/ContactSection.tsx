@@ -110,27 +110,25 @@ export default function ContactSection() {
         <div className="mt-16 flex flex-col sm:flex-row justify-center gap-8 text-center">
           <div>
             <h3 className="text-lg font-semibold mb-2">Email Us</h3>
-            <p className="text-foreground/80">contact@krishimitra.ai</p>
+            <p className="text-foreground/80">
+              <a href="mailto:Krishimitra2@gmail.com" className="hover:text-primary transition-colors">
+                Krishimitra2@gmail.com
+              </a>
+            </p>
           </div>
           
           <div>
             <h3 className="text-lg font-semibold mb-2">Follow Us</h3>
             <div className="flex justify-center space-x-4">
-              <a href="#" className="text-foreground hover:text-primary transition-colors" aria-label="Twitter">
+              <a href="https://instagram.com/Krishimitra_2k25" target="_blank" rel="noopener noreferrer" className="text-foreground hover:text-primary transition-colors" aria-label="Instagram">
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
                 </svg>
               </a>
-              <a href="#" className="text-foreground hover:text-primary transition-colors" aria-label="Instagram">
+              <a href="https://instagram.com/Krishimitra_2k25" target="_blank" rel="noopener noreferrer" className="text-foreground hover:text-primary transition-colors" aria-label="Instagram">
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
                   <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
-                </svg>
-              </a>
-              <a href="#" className="text-foreground hover:text-primary transition-colors" aria-label="LinkedIn">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z" />
-                  <circle cx="4" cy="4" r="2"></circle>
                 </svg>
               </a>
             </div>
