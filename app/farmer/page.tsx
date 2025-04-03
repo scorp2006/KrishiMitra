@@ -8,6 +8,7 @@ export default function FarmerPage() {
     <div className="min-h-screen bg-background text-foreground">
       <NavBar />
       <main>
+        {/* Header Section */}
         <div className="pt-20 pb-8 bg-background">
           <div className="container mx-auto px-4 md:px-6">
             <h1 className="text-4xl md:text-5xl font-bold text-center">
@@ -147,6 +148,63 @@ export default function FarmerPage() {
           </div>
         </section>
         
+        {/* Loans Section */}
+        <section className="py-16 md:py-20 bg-background">
+          <div className="container mx-auto px-4 md:px-6">
+            <div className="max-w-4xl mx-auto">
+              <div className="bg-gradient-to-r from-primary/5 to-primary/20 rounded-xl p-8 md:p-10 shadow-sm">
+                <div className="flex flex-col md:flex-row md:items-center gap-6 md:gap-10">
+                  <div className="p-4 bg-white/90 rounded-full shadow-sm">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                  </div>
+                  <div className="flex-1">
+                    <h2 className="text-2xl md:text-3xl font-bold mb-3">
+                      Agricultural Loans for Farmers
+                    </h2>
+                    <p className="text-foreground/80 mb-6">
+                      Access affordable financing tailored for your farming needs with lower interest rates, flexible repayment options aligned with harvest cycles, and minimal documentation.
+                    </p>
+                    <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2 mb-6">
+                      <li className="flex items-center">
+                        <svg className="h-5 w-5 text-primary mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                        </svg>
+                        <span>Interest rates from 4%</span>
+                      </li>
+                      <li className="flex items-center">
+                        <svg className="h-5 w-5 text-primary mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                        </svg>
+                        <span>Quick disbursement</span>
+                      </li>
+                      <li className="flex items-center">
+                        <svg className="h-5 w-5 text-primary mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                        </svg>
+                        <span>No collateral up to ₹1 lakh</span>
+                      </li>
+                      <li className="flex items-center">
+                        <svg className="h-5 w-5 text-primary mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                        </svg>
+                        <span>Simple application process</span>
+                      </li>
+                    </ul>
+                    <Link href="/loans" className="inline-flex items-center bg-primary text-white font-medium py-3 px-6 rounded-md hover:bg-primary/90 transition-colors focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2">
+                      Apply for a Loan
+                      <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                      </svg>
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        
         {/* Additional Services Section */}
         <section className="py-16 md:py-20 bg-muted/20">
           <div className="container mx-auto px-4 md:px-6">
@@ -154,22 +212,8 @@ export default function FarmerPage() {
               Additional <span className="text-primary">Services</span>
             </h2>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-              {/* Service 1: Loans */}
-              <div className="bg-background rounded-lg p-6 shadow-sm border border-muted">
-                <div className="p-3 bg-primary/10 rounded-full inline-flex mb-4">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
-                </div>
-                <h3 className="text-lg font-bold mb-2">Loans</h3>
-                <p className="text-sm text-foreground/80 mb-4">
-                  Access agricultural loans from partner banks and financial institutions with competitive rates.
-                </p>
-                <Link href="/loans" className="text-primary text-sm font-medium hover:underline">Learn more</Link>
-              </div>
-              
-              {/* Service 2: Subsidies */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {/* Service 1: Subsidies */}
               <div className="bg-background rounded-lg p-6 shadow-sm border border-muted">
                 <div className="p-3 bg-primary/10 rounded-full inline-flex mb-4">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -180,10 +224,10 @@ export default function FarmerPage() {
                 <p className="text-sm text-foreground/80 mb-4">
                   Discover and apply for government subsidies and support programs for farmers.
                 </p>
-                <Link href="/subsidies" className="text-primary text-sm font-medium hover:underline">Learn more</Link>
+                <span className="text-primary/70 text-sm font-medium italic">Coming Soon</span>
               </div>
               
-              {/* Service 3: Farmer Network */}
+              {/* Service 2: Farmer Network */}
               <div className="bg-background rounded-lg p-6 shadow-sm border border-muted">
                 <div className="p-3 bg-primary/10 rounded-full inline-flex mb-4">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -194,10 +238,10 @@ export default function FarmerPage() {
                 <p className="text-sm text-foreground/80 mb-4">
                   Connect with other farmers to share knowledge, resources, and support each other.
                 </p>
-                <Link href="/network" className="text-primary text-sm font-medium hover:underline">Learn more</Link>
+                <span className="text-primary/70 text-sm font-medium italic">Coming Soon</span>
               </div>
               
-              {/* Service 4: Announcements */}
+              {/* Service 3: Announcements */}
               <div className="bg-background rounded-lg p-6 shadow-sm border border-muted">
                 <div className="p-3 bg-primary/10 rounded-full inline-flex mb-4">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -208,7 +252,7 @@ export default function FarmerPage() {
                 <p className="text-sm text-foreground/80 mb-4">
                   Stay updated with the latest agricultural news, policies, and important announcements.
                 </p>
-                <Link href="/announcements" className="text-primary text-sm font-medium hover:underline">Learn more</Link>
+                <span className="text-primary/70 text-sm font-medium italic">Coming Soon</span>
               </div>
             </div>
           </div>
@@ -225,12 +269,9 @@ export default function FarmerPage() {
                 <p className="text-lg text-foreground/80 mb-8">
                   Join thousands of farmers who are already using KrishiMitra AI to increase their yields and improve their farming practices.
                 </p>
-                <Link href="/register" className="btn-primary inline-flex px-8 py-3 text-lg">
-                  Get Started
-                  <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                  </svg>
-                </Link>
+                <p className="text-md text-foreground/90">
+                  Our AI models are extensively tested and validated with real-world data from Indian farms across different regions and crop varieties.
+                </p>
               </div>
             </div>
           </div>
