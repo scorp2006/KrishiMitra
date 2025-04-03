@@ -27,11 +27,14 @@ export default function NavBar() {
           <Link href="/" className="text-foreground hover:text-primary transition-colors">
             Home
           </Link>
-          <Link href="/features" className="text-foreground hover:text-primary transition-colors">
-            Features
+          <Link href="/farmer" className="text-foreground hover:text-primary transition-colors">
+            Farmers
+          </Link>
+          <Link href="/consumer" className="text-foreground hover:text-primary transition-colors">
+            Consumers
           </Link>
           <Link href="/about" className="text-foreground hover:text-primary transition-colors">
-            About Us
+            About
           </Link>
           <Link href="/contact" className="text-foreground hover:text-primary transition-colors">
             Contact
@@ -71,18 +74,25 @@ export default function NavBar() {
               Home
             </Link>
             <Link 
-              href="/features" 
+              href="/farmer" 
               className="text-foreground hover:text-primary transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
-              Features
+              Farmers
+            </Link>
+            <Link 
+              href="/consumer" 
+              className="text-foreground hover:text-primary transition-colors"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Consumers
             </Link>
             <Link 
               href="/about" 
               className="text-foreground hover:text-primary transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
-              About Us
+              About
             </Link>
             <Link 
               href="/contact" 

@@ -14,14 +14,17 @@ export default function HeroSection() {
               KrishiMitra AI integrates traditional farming wisdom with cutting-edge technology to reduce crop losses, increase yield, and promote sustainable farming practices.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Link href="/features" className="btn-primary inline-flex items-center justify-center">
-                Learn More
+              <Link href="/farmer" className="btn-primary inline-flex items-center justify-center">
+                For Farmers
                 <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
                 </svg>
               </Link>
-              <Link href="/contact" className="btn-secondary inline-flex items-center justify-center">
-                Contact Us
+              <Link href="/consumer" className="btn-secondary inline-flex items-center justify-center">
+                For Consumers
+                <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                </svg>
               </Link>
             </div>
           </div>
