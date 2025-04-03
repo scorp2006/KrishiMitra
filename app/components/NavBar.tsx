@@ -24,22 +24,16 @@ export default function NavBar() {
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex space-x-6">
-          <Link href="#about" className="text-foreground hover:text-primary transition-colors">
-            About Us
+          <Link href="/" className="text-foreground hover:text-primary transition-colors">
+            Home
           </Link>
-          <Link href="#features" className="text-foreground hover:text-primary transition-colors">
+          <Link href="/features" className="text-foreground hover:text-primary transition-colors">
             Features
           </Link>
-          <Link href="#how-it-works" className="text-foreground hover:text-primary transition-colors">
-            How It Works
+          <Link href="/about" className="text-foreground hover:text-primary transition-colors">
+            About Us
           </Link>
-          <Link href="#impact" className="text-foreground hover:text-primary transition-colors">
-            Impact
-          </Link>
-          <Link href="#revenue" className="text-foreground hover:text-primary transition-colors">
-            Revenue Model
-          </Link>
-          <Link href="#contact" className="text-foreground hover:text-primary transition-colors">
+          <Link href="/contact" className="text-foreground hover:text-primary transition-colors">
             Contact
           </Link>
         </div>
@@ -70,42 +64,28 @@ export default function NavBar() {
         <div className="md:hidden bg-background border-t border-muted py-4 px-4">
           <div className="flex flex-col space-y-4">
             <Link 
-              href="#about" 
+              href="/" 
               className="text-foreground hover:text-primary transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
-              About Us
+              Home
             </Link>
             <Link 
-              href="#features" 
+              href="/features" 
               className="text-foreground hover:text-primary transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
               Features
             </Link>
             <Link 
-              href="#how-it-works" 
+              href="/about" 
               className="text-foreground hover:text-primary transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
-              How It Works
+              About Us
             </Link>
             <Link 
-              href="#impact" 
-              className="text-foreground hover:text-primary transition-colors"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Impact
-            </Link>
-            <Link 
-              href="#revenue" 
-              className="text-foreground hover:text-primary transition-colors"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Revenue Model
-            </Link>
-            <Link 
-              href="#contact" 
+              href="/contact" 
               className="text-foreground hover:text-primary transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >

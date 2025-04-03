@@ -24,18 +24,8 @@ const StepCard: React.FC<StepCardProps> = ({ number, title, description, icon })
 
 export default function HowItWorksSection() {
   return (
-    <section id="how-it-works" className="py-16 md:py-24 bg-background">
+    <section className="py-16 md:py-24 bg-background">
       <div className="container mx-auto px-4 md:px-6">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-foreground">
-            How <span className="text-primary">It Works</span>
-          </h2>
-          <p className="text-lg text-foreground/80 max-w-2xl mx-auto">
-            Our three-tier approach integrates data collection, AI analysis, and user engagement.
-          </p>
-          <div className="h-1 w-20 bg-primary mx-auto rounded-full mt-6"></div>
-        </div>
-        
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 relative">
           {/* Connecting Line (Desktop) */}
           <div className="hidden md:block absolute top-20 left-1/6 right-1/6 h-0.5 bg-primary/30"></div>

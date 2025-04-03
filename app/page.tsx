@@ -1,11 +1,5 @@
 import NavBar from './components/NavBar';
 import HeroSection from './components/HeroSection';
-import AboutSection from './components/AboutSection';
-import FeaturesSection from './components/FeaturesSection';
-import HowItWorksSection from './components/HowItWorksSection';
-import ImpactSection from './components/ImpactSection';
-import RevenueSection from './components/RevenueSection';
-import ContactSection from './components/ContactSection';
 import Footer from './components/Footer';
 
 export default function Home() {
@@ -14,12 +8,6 @@ export default function Home() {
       <NavBar />
       <main>
         <HeroSection />
-        <AboutSection />
-        <FeaturesSection />
-        <HowItWorksSection />
-        <ImpactSection />
-        <RevenueSection />
-        <ContactSection />
       </main>
       <Footer />
     </div>

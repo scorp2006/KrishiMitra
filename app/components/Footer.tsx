@@ -20,22 +20,16 @@ export default function Footer() {
           </Link>
           
           <div className="mb-4 flex flex-wrap justify-center gap-6 text-sm">
-            <Link href="#about" className="text-foreground/80 hover:text-primary transition-colors">
-              About
+            <Link href="/" className="text-foreground/80 hover:text-primary transition-colors">
+              Home
             </Link>
-            <Link href="#features" className="text-foreground/80 hover:text-primary transition-colors">
+            <Link href="/features" className="text-foreground/80 hover:text-primary transition-colors">
               Features
             </Link>
-            <Link href="#how-it-works" className="text-foreground/80 hover:text-primary transition-colors">
-              How It Works
+            <Link href="/about" className="text-foreground/80 hover:text-primary transition-colors">
+              About Us
             </Link>
-            <Link href="#impact" className="text-foreground/80 hover:text-primary transition-colors">
-              Impact
-            </Link>
-            <Link href="#revenue" className="text-foreground/80 hover:text-primary transition-colors">
-              Revenue Model
-            </Link>
-            <Link href="#contact" className="text-foreground/80 hover:text-primary transition-colors">
+            <Link href="/contact" className="text-foreground/80 hover:text-primary transition-colors">
               Contact
             </Link>
           </div>

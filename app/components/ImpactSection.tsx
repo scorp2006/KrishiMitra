@@ -20,18 +20,8 @@ const StatCard: React.FC<StatProps> = ({ value, label, icon }) => {
 
 export default function ImpactSection() {
   return (
-    <section id="impact" className="py-16 md:py-24 bg-muted/30">
+    <section className="py-16 md:py-24 bg-muted/30">
       <div className="container mx-auto px-4 md:px-6">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-foreground">
-            Our <span className="text-primary">Impact</span>
-          </h2>
-          <p className="text-lg text-foreground/80 max-w-2xl mx-auto">
-            KrishiMitra AI empowers farmers to achieve sustainable growth while contributing to global food security.
-          </p>
-          <div className="h-1 w-20 bg-primary mx-auto rounded-full mt-6"></div>
-        </div>
-        
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
           <StatCard 
             value="30%" 

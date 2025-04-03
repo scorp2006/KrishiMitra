@@ -2,15 +2,8 @@ import Image from 'next/image';
 
 export default function AboutSection() {
   return (
-    <section id="about" className="py-16 md:py-24 bg-background">
+    <section className="py-16 md:py-24 bg-background">
       <div className="container mx-auto px-4 md:px-6">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-foreground">
-            About <span className="text-primary">KrishiMitra AI</span>
-          </h2>
-          <div className="h-1 w-20 bg-primary mx-auto rounded-full"></div>
-        </div>
-        
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
           <div>
             <h3 className="text-2xl font-semibold mb-6 text-foreground">Key Challenges Addressed</h3>

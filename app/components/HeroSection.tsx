@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function HeroSection() {
   return (
@@ -13,15 +14,15 @@ export default function HeroSection() {
               KrishiMitra AI integrates traditional farming wisdom with cutting-edge technology to reduce crop losses, increase yield, and promote sustainable farming practices.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <a href="#features" className="btn-primary inline-flex items-center justify-center">
+              <Link href="/features" className="btn-primary inline-flex items-center justify-center">
                 Learn More
                 <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
                 </svg>
-              </a>
-              <a href="#contact" className="btn-secondary inline-flex items-center justify-center">
+              </Link>
+              <Link href="/contact" className="btn-secondary inline-flex items-center justify-center">
                 Contact Us
-              </a>
+              </Link>
             </div>
           </div>
           <div className="relative h-64 md:h-auto">

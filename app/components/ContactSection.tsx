@@ -30,18 +30,8 @@ export default function ContactSection() {
   };
   
   return (
-    <section id="contact" className="py-16 md:py-24 bg-muted/30">
+    <section className="py-16 md:py-24 bg-background">
       <div className="container mx-auto px-4 md:px-6">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-foreground">
-            Contact <span className="text-primary">Us</span>
-          </h2>
-          <p className="text-lg text-foreground/80 max-w-2xl mx-auto">
-            Have questions about KrishiMitra AI? We'd love to hear from you!
-          </p>
-          <div className="h-1 w-20 bg-primary mx-auto rounded-full mt-6"></div>
-        </div>
-        
         <div className="max-w-2xl mx-auto bg-background rounded-lg shadow-sm p-6 md:p-8 border border-muted">
           {isSubmitted ? (
             <div className="text-center py-8">
