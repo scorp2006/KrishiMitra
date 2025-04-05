@@ -5,7 +5,6 @@ import { useEffect, useState } from 'react';
 import { useSearchParams } from 'next/navigation';
 import NavBar from '@/app/components/NavBar';
 import Footer from '@/app/components/Footer';
-import Image from 'next/image';
 
 export default function ErrorPage() {
   const searchParams = useSearchParams();

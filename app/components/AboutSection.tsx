@@ -1,5 +1,3 @@
-import Image from 'next/image';
-
 export default function AboutSection() {
   return (
     <section className="py-16 md:py-24 bg-background">

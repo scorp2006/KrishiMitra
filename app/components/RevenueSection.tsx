@@ -1,4 +1,4 @@
-import Image from 'next/image';
+// Remove Image import if not used in the component
 
 interface RevenueStreamProps {
   title: string;

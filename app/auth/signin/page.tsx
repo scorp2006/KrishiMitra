@@ -1,14 +1,12 @@
 'use client';
 
 import { signIn } from 'next-auth/react';
-import Image from 'next/image';
+import { useSearchParams } from 'next/navigation';
 import { useState } from 'react';
-import { useRouter, useSearchParams } from 'next/navigation';
 import NavBar from '../../components/NavBar';
 import Footer from '../../components/Footer';
 
 export default function SignIn() {
-  const router = useRouter();
   const searchParams = useSearchParams();
   const callbackUrl = searchParams.get('callbackUrl') || '/';
   const [isLoading, setIsLoading] = useState(false);

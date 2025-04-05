@@ -5,12 +5,21 @@ import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
 import Image from 'next/image';
 
+interface DiseaseResults {
+  disease: string;
+  confidence: number;
+  description: string;
+  symptoms: string[];
+  treatment: string[];
+  prevention: string[];
+}
+
 export default function DiseaseDetectionPage() {
   const [selectedFile, setSelectedFile] = useState<File | null>(null);
   const [previewUrl, setPreviewUrl] = useState<string | null>(null);
   const [plantType, setPlantType] = useState<string>('');
   const [isAnalyzing, setIsAnalyzing] = useState<boolean>(false);
-  const [results, setResults] = useState<any>(null);
+  const [results, setResults] = useState<DiseaseResults | null>(null);
   const fileInputRef = useRef<HTMLInputElement>(null);
 
   const handleFileChange = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -72,7 +81,7 @@ export default function DiseaseDetectionPage() {
     // Mock API call
     setTimeout(() => {
       // Generate results based on the selected plant type
-      let mockResults;
+      let mockResults: DiseaseResults;
       
       if (plantType === 'tomato') {
         mockResults = {

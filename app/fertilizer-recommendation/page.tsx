@@ -4,8 +4,27 @@ import { useState } from 'react';
 import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
 
+interface FormData {
+  nitrogen: string;
+  phosphorus: string;
+  potassium: string;
+  crop: string;
+  soilType: string;
+  ph: string;
+  moisture: string;
+}
+
+interface Recommendations {
+  primaryRecommendation: string;
+  npkRatio: string;
+  recommendedProducts: string[];
+  applicationTips: string[];
+  organicAlternatives: string[];
+  expectedBenefits: string[];
+}
+
 export default function FertilizerRecommendationPage() {
-  const [formData, setFormData] = useState({
+  const [formData, setFormData] = useState<FormData>({
     nitrogen: '',
     phosphorus: '',
     potassium: '',
@@ -17,14 +36,14 @@ export default function FertilizerRecommendationPage() {
   
   const [isLoading, setIsLoading] = useState(false);
   const [showResults, setShowResults] = useState(false);
-  const [recommendations, setRecommendations] = useState<any>(null);
+  const [recommendations, setRecommendations] = useState<Recommendations | null>(null);
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
     const { name, value } = e.target;
-    setFormData({
-      ...formData,
+    setFormData(prev => ({
+      ...prev,
       [name]: value
-    });
+    }));
   };
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -40,7 +59,7 @@ export default function FertilizerRecommendationPage() {
     }, 2000);
   };
 
-  const generateMockRecommendations = (data: any) => {
+  const generateMockRecommendations = (data: FormData): Recommendations => {
     // This would be replaced with actual AI model predictions
     let primaryRecommendation = "";
     let recommendationDetails = [];
